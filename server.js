@@ -1,6 +1,8 @@
 var express = require('express');
 var app     = express();
 
+require('dotenv').load();
+
 app.use( express.static('./public') );
 
 app.get('/', function(req, res, next){
