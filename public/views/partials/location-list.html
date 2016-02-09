@@ -5,7 +5,7 @@
     <h5>Browse All Locations</h5>
     <ul id="locations-list">
       <li ng-repeat="location in locations" ng-click="pickLocation(location.latitude, location.longitude)">
-        <p class="name">{{ location.name }}</p>
+        <div class="name">{{ location.name }}</div>
         <div class="address">{{ location.location }}</div>
         <a class="more-info" href="#/locations/{{ $index }}">More Info</a>
       </li>
