@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="one columns list">
+  </div>
+  <div class="three columns">
+    <h5>Browse All Locations</h5>
+    <ul id="locations-list">
+      <li ng-repeat="location in locations" ng-click="pickLocation(location.latitude, location.longitude)">
+        <p class="name">{{ location.name }}</p>
+        <div class="address">{{ location.location }}</div>
+        <a class="more-info" href="#/locations/{{ $index }}">More Info</a>
+      </li>
+    </ul>
+  </div>
+  <div class="five columns">
+    <div id="map">
+    </div>
+  </div>
+  <div class="three columns">
+    <form id="search">
+    <label>Join our mailing list for updates and events!</label>
+    <input type="text" class="u-full-width" name="name" Placeholder="Email">
+    <input type="submit" value="Submit">
+    </form>
+  </div>
+</div>

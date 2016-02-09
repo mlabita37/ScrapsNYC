@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="locationsApp">
   <head>
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width, initial-scale=1.0" />
@@ -15,6 +15,16 @@
     <script src="/js/app.js" charset="utf-8"></script>
   </head>
   <body>
-
+    <header>
+    <h1><a id="title" href="#/locations">Scraps NYC</a></h1>
+    <p id="info">Locate food scrap drop-off centers in New York City</p>
+    </header>
+    <div id="locations">
+      <div class="locations-container" ng-view>
+      </div>
+    </div>
+    <footer>
+      <p id="foot-tag">Powered by the NYC OpenData API</p>
+    </footer>
   </body>
 </html>
