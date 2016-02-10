@@ -11,5 +11,5 @@ app.get('/', function(req, res, next){
 
 var port = 8080;
 app.listen(port, function(){
-  console.log("...listending on " + port);
+  console.log("...listening on " + port);
 });
