@@ -79,3 +79,34 @@ app.controller('locationDetailController', ['$scope', '$routeParams', function($
   $scope.locations = locations;
   $scope.location = $scope.locations[$routeParams.index];
 }]);
+
+
+// Email routes
+app.config(['$routeProvider', function( $routeProvider ){
+  $routeProvider
+  .when('/api/emails', {
+    templateUrl: '/views/partials/email-detail.html',
+    controller: 'emailsController'
+  })
+  .otherwise({
+    redirectTo: '/api/emails'
+  });
+}]);
+
+
+// Email DB
+app.controller('emailsController', ['$scope', '$http', function($scope, $http){
+
+  $scope.newEmail = {};
+  $scope.emails= [];
+
+  $scope.createEmail = function(){
+    $http.post('/api/emails', {email: $scope.newEmail}).then(function(response){
+      console.log('createEmail is working');
+      var data = response.data;
+      $scope.emails.push( data );
+      $scope.newEmail = '';
+    });
+  };
+
+}]);

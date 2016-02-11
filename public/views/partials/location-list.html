@@ -15,12 +15,12 @@
     <div id="map">
     </div>
   </div>
-  <div class="three columns">
-    <form id="search">
+  <div class="three columns" ng-controller="emailsController">
+    <form id="email" ng-submit="createEmail()">
     <label>Join our mailing list for updates and events!</label>
-    <input type="text" class="u-full-width" placeholder="First Name">
-    <input type="text" class="u-full-width" placeholder="Last Name">
-    <input type="text" class="u-full-width" placeholder="Email">
+    <input ng-model="newEmail.firstname" type="text" class="u-full-width" placeholder="First Name">
+    <input ng-model="newEmail.lastname" type="text" class="u-full-width" placeholder="Last Name">
+    <input ng-model="newEmail.email" type="text" class="u-full-width" placeholder="Email">
     <input type="submit" value="Submit">
     </form>
   </div>
