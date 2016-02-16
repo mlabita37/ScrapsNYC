@@ -20,7 +20,7 @@ app.use('/', indexRouter);
 var apiRouter = require('./routes/api/apiRouter');
 app.use('/api/emails', apiRouter);
 
-var port = 8000;
+var port = process.env.PORT || 8000;
 app.listen(port, function(){
   console.log("...listening on " + port);
 });
