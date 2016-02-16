@@ -89,7 +89,7 @@ app.config(['$routeProvider', function( $routeProvider ){
     controller: 'emailsController'
   })
   .otherwise({
-    redirectTo: '/api/emails'
+    redirectTo: '/locations'
   });
 }]);
 
