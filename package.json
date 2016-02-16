@@ -1,6 +1,9 @@
 {
   "name": "scraps_finder",
   "version": "1.0.0",
+  "engines": {
+    "node": "5.4.0"
+  },
   "description": "",
   "main": "server.js",
   "scripts": {
