@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 
 app.use( express.static('./public') );
 
-mongoose.connect('mongodb://localhost/scraps-nyc-01');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/scraps-nyc-01');
 
 var indexRouter = require('./routes/index');
 app.use('/', indexRouter);
