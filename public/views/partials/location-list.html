@@ -16,12 +16,16 @@
     </div>
   </div>
   <div class="three columns" ng-controller="emailsController">
-    <form id="email" ng-submit="createEmail()">
+    <form id="email" ng-submit="createEmail()" ng-hide="registered">
     <label>Join our mailing list for updates and events!</label>
     <input ng-model="newEmail.firstname" type="text" class="u-full-width" placeholder="First Name">
     <input ng-model="newEmail.lastname" type="text" class="u-full-width" placeholder="Last Name">
     <input ng-model="newEmail.email" type="text" class="u-full-width" placeholder="Email">
     <input type="submit" value="Submit">
     </form>
+    <div class="email-detail" ng-show="registered">
+    <h5>You've succesfully joined our email list</h5>
+    <p>{{emails.email}} has been registered with ScrapsNYC!</p>
+    </div>
   </div>
 </div>

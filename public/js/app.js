@@ -85,10 +85,6 @@ app.controller('locationDetailController', ['$scope', '$routeParams', function($
 app.config(['$routeProvider', function( $routeProvider ){
   $routeProvider
   .when('/api/emails', {
-    templateUrl: '/views/partials/email-detail.html',
-    controller: 'emailsController'
-  })
-  .otherwise({
     redirectTo: '/locations'
   });
 }]);
@@ -106,6 +102,7 @@ app.controller('emailsController', ['$scope', '$http', function($scope, $http){
       var data = response.data;
       $scope.emails.push( data );
       $scope.newEmail = '';
+      $scope.registered = true;
     });
   };
 

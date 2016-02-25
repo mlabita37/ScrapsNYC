@@ -12,16 +12,9 @@ apiRouter.get('/', function(req, res){
 
 apiRouter.post('/', function(req, res){
   console.log('Email info', req.body);
-  var newEmail = new Email( req.body.Email );
+  var newEmail = new Email( req.body.email );
   newEmail.save(function(err, dbEmail){
     res.json( dbEmail );
-  });
-});
-
-apiRouter.delete('/:id', function(req, res){
-  Email.findByIdAndRemove(req.params.id, function(err){
-    if (err) { res.status(500).end(); }
-    res.status(204).end();
   });
 });
 
