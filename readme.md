@@ -1,5 +1,5 @@
 ###Scraps NYC
-A Mongoose, Express, Angular, and Node.js (MEAN Stack) web application for locating food scrapping locations in the NYC area.
+#####A Mongoose, Express, Angular, and Node.js (MEAN Stack) web application for locating food scrapping locations in the NYC area.
 
 ![](https://media.giphy.com/media/QEYkqeoc7iQo/giphy.gif)
 
