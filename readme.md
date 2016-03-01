@@ -8,7 +8,7 @@
 
 
 ###About   
-#####Intended to increase New Yorkers awareness of composting and food scrapping locations available throughout the city. Using data from the NYC Open Data API and converting it to JSON, this application allows the user to browse each location on the map. Visitors can also get more info on each location, including address, hours, and directions.
+#####Intended to increase New Yorkers awareness of composting and food scrapping locations available throughout the city. Using CSV data from the NYC Open Data API and converting it to JSON, this application allows the user to browse each location and display it on the map. Visitors can also get more info on each location, including address, hours, and directions.
 
 ![](https://media.giphy.com/media/f5H8YWjitXvNK/giphy.gif)
 
