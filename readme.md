@@ -5,7 +5,7 @@ A Mongoose, Express, Angular, and Node.js (MEAN Stack) web application for locat
 
 ![](https://media.giphy.com/media/ctNEOCMlOq2lO/giphy.gif)
 
-![](https://media.giphy.com/media/BzSFtKuNqa4Ks/giphy.gif)
+![](https://media.giphy.com/media/f5H8YWjitXvNK/giphy.gif)
 
 
 ###System dependencies
