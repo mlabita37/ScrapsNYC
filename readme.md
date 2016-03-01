@@ -4,11 +4,7 @@
 ![](https://media.giphy.com/media/QEYkqeoc7iQo/giphy.gif)
 
 ###System dependencies
-body-parser: 1.15.0,
-dotenv: 2.0.0,
-ejs: 2.4.1,
-express: 4.13.4,
-mongoose: 4.4.4
+#####body-parser: 1.15.0, dotenv: 2.0.0, ejs: 2.4.1, express: 4.13.4, mongoose: 4.4.4
 
 
 ###About   
