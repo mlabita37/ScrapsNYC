@@ -76,6 +76,7 @@ form#email {
 label {
   font-size: 0.825em;
   margin-bottom: 10px;
+  line-height: 1.5em;
 }
 
 #map {
@@ -141,6 +142,9 @@ p {
   color: #aa863a;
 }
 
+.email-detail {
+  margin-top: 20px;
+}
 /*-  FOOTER
 ----------------------------------------------------------------------*/
 footer {
@@ -155,7 +159,7 @@ footer {
 }
 
 #foot-tag {
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: white;
   margin: 0 auto;
   text-align: center;
@@ -166,14 +170,11 @@ footer {
   color: #fff;
   text-align: center;
   margin: 10px auto 0;
-}
-
-#author {
-  font-size: 1.25em;
-}
-#copyright {
   font-size: 1em;
 }
+
+
+
 
 /*-  MEDIA QUERIES
 ----------------------------------------------------------------------*/
