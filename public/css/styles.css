@@ -50,7 +50,7 @@ h1 {
 }
 
 a {
-  color: #fae596;
+  color: gold;
   text-decoration: none;
 }
 
@@ -109,7 +109,7 @@ h5 {
 }
 
 #locations-list li:hover {
-  background-color: #729f98;
+  background-color: #3fb0ac;
 }
 
 li:hover + .name {
