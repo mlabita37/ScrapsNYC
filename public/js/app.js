@@ -94,7 +94,7 @@ app.config(['$routeProvider', function( $routeProvider ){
 app.controller('emailsController', ['$scope', '$http', function($scope, $http){
 
   $scope.newEmail = {};
-  $scope.emails= [];
+  $scope.emails = [];
 
   $scope.createEmail = function(){
     $http.post('/api/emails', {email: $scope.newEmail}).then(function(response){
