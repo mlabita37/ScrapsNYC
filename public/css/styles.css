@@ -40,7 +40,7 @@ h1 {
   font-size: 3em;
   font-family: 'Amatic SC', cursive;
   letter-spacing: 5px;
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 1px #000;
 }
 
 #info{
@@ -50,12 +50,16 @@ h1 {
 }
 
 a {
-  color: gold;
+  color: #FFD700;
   text-decoration: none;
 }
 
 a#title{
   text-decoration: none;
+}
+
+a#title:hover {
+  color: #fff;
 }
 
 a.more-info {
@@ -64,7 +68,7 @@ a.more-info {
 }
 
 a.more-info:hover {
-  color: white;
+  color: #fff;
 }
 
 
@@ -138,9 +142,6 @@ p {
   font-size: 1.5em;
 }
 
-.gold {
-  color: #aa863a;
-}
 
 .email-detail {
   width: 80%;
